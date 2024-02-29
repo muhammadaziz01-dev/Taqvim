@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -311,10 +312,18 @@ template {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/imgs/back-img.jpg);
+  background-repeat: no-repeat;
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1690px;
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
@@ -325,27 +334,29 @@ header {
 }
 header .nav {
   display: flex;
-  height: 70px;
+  padding: 50px 0px 30px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
-header .nav__logo {
-  font-style: 24px;
-  cursor: pointer;
+header .nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 1258px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.5);
 }
-header .nav__list {
-  display: flex;
-  gap: 50px;
-  list-style-type: none;
+header .nav-toglmy {
+  display: none;
 }
-header .nav__list--item {
-  text-transform: uppercase;
-}
-header .nav__list--item-link {
-  text-decoration: none;
-}
-header .nav__list--item-link:hover {
-  color: red;
+header .nav-titil {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 main {
@@ -354,4 +365,149 @@ main {
 
 footer {
   width: 100%;
+}
+
+#intro {
+  width: 100%;
+}
+#intro .intro--top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+  position: relative;
+}
+#intro .intro--top h2 {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#intro .intro--top-region {
+  width: 199px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 3px 0px 20px;
+}
+#intro .intro--top-region p {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#intro .intro--top-region button {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+#intro .intro--top--drap {
+  position: absolute;
+  top: 110%;
+  width: 199px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 25px 1px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  margin-left: 240px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  z-index: 10;
+}
+#intro .intro--top--drap .pi {
+  color: #13003C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+#intro .intro--top .drapdount {
+  display: none;
+}
+#intro .intro-centr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 582px;
+  margin-top: 100px;
+}
+#intro .intro-centr h2 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#intro .intro-centr h2 span {
+  color: #FFC700;
+}
+#intro .intro-centr div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#intro .intro-centr div p {
+  color: #FFC700;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#intro .intro-centr div p:nth-child(3) {
+  color: #FFF;
+}
+#intro .intro-botton {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  padding: 82px 0px;
+  gap: 42px;
+  position: relative;
+}
+#intro .intro-botton-card {
+  width: 250px;
+  height: 397px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+#intro .intro-botton-card .card-titil {
+  color: #FFC700;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#intro .intro-botton-card .card-taim {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,42 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="apple-touch-icon" sizes="180x180" href="./public/favicon_io/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon_io/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon_io/favicon-16x16.png" />
-        <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
-        <!-- main css -->
-        <link rel="stylesheet" href="./css/style.min.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <!-- -------- Header start  ------- -->
-        <header>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- -------- Header start  ------- -->
+    <header>
+        <div>
             <div class="container">
                 <nav class="nav">
-                    <a href="" class="nav__logo">LOGO</a>
-                    <ul class="nav__list">
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Home</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">About</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Service</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Contact</a></li>
-                    </ul>
+                    <div class="nav-toglmy">
+                        <button><img src="./assets/imgs/map-location.svg" alt="icon"></button>
+                    </div>
+                    <div class="nav-titil">
+                        <h1>Namoz vaqtlari</h1>
+                    </div>
                 </nav>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- -------- Header end  ------- -->
+    <!-- -------- Header end  ------- -->
 
-        <main>
-            <!-- sections -->
-        </main>
-
-        <footer>
-            <div class="container">
-                <p>Site footer</p>
+    <main>
+        <section id="intro">
+            <div class="container intro-wrap">
+                <div class="intro--top">
+                    <h2>Hududni tanlang:</h2>
+                    <div class="intro--top-region">
+                        <p id="region">Toshkent</p>
+                        <button id="drapdount-btn"><img src="./assets/imgs/Frame.svg" alt="icon"></button>
+                    </div>
+                    <div id="drapdount" class="intro--top--drap drapdount">
+                        <!-- dinamic region -->
+                    </div>
+                </div>
+                <div class="intro-centr">
+                    <h2>Mintaqa: <span id="cheng-region">Toshkent shahri</span></h2>
+                    <div>
+                        <img src="./assets/imgs/calendar.svg" alt="calendar">
+                        <p id="sana"></p>
+                        <p id="taim"></p>
+                    </div>
+                </div>
+                <div class="intro-botton">
+                    <div class="intro-botton-card">
+                        <h2 class="card-titil">Tong</h2>
+                        <img src="./assets/imgs/tong.svg" alt="img">
+                        <h1 class="card-taim Tong">04:58</h1>
+                    </div>
+                    <div class="intro-botton-card">
+                        <h2 class="card-titil">Quyosh</h2>
+                        <img src="./assets/imgs/quyish.svg" alt="img">
+                        <h1 class="card-taim Quyosh">04:58</h1>
+                    </div>
+                    <div class="intro-botton-card">
+                        <h2 class="card-titil">Peshin</h2>
+                        <img src="./assets/imgs/peshin.svg" alt="img">
+                        <h1 class="card-taim Peshin">04:58</h1>
+                    </div>
+                    <div class="intro-botton-card">
+                        <h2 class="card-titil">Asr</h2>
+                        <img src="./assets/imgs/asir.svg" alt="img">
+                        <h1 class="card-taim Asr">04:58</h1>
+                    </div>
+                    <div class="intro-botton-card">
+                        <h2 class="card-titil">Shom</h2>
+                        <img src="./assets/imgs/shom.svg" alt="img">
+                        <h1 class="card-taim Shom">04:58</h1>
+                    </div>
+                    <div class="intro-botton-card">
+                        <h2 class="card-titil">Xufton</h2>
+                        <img src="./assets/imgs/hufton.svg" alt="img">
+                        <h1 class="card-taim Xufton">04:58</h1>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+<script src="./index.js"></script>
+
 </html>

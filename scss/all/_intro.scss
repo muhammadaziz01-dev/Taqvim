@@ -1,0 +1,169 @@
+#intro{
+    width: 100%;
+
+
+    
+    .intro--top{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 80px;  
+        margin-top: 40px;
+        position: relative;
+        h2{
+            color: #FFF;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        &-region{
+            width: 199px;
+            height: 46px;
+            flex-shrink: 0;
+            border-radius: 50px;
+            border: 1px solid #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 3px 0px 20px;
+
+            p{
+                color: #FFF;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                
+            }
+
+            button{
+                width: 38px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+            }
+
+        }
+
+
+        &--drap{
+            position: absolute;
+            top: 110%;
+            width: 199px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.70);
+            box-shadow: 0px 4px 25px 1px rgba(255, 255, 255, 0.50);
+            backdrop-filter: blur(4px);
+            margin-left: 240px;
+            padding: 10px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            z-index: 10;
+            
+
+            .pi{
+                color: #13003C;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                cursor: pointer;
+            }
+        }
+
+        .drapdount{
+           display: none;
+        }
+    }
+
+    .intro-centr{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 582px;
+        margin-top: 100px;
+
+        h2{
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            span{
+                color: #FFC700; 
+            }
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            p{
+                color: #FFC700;
+                font-family: Jost;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            p:nth-child(3){
+                color: #FFF; 
+            }
+        }
+    }
+
+    .intro-botton{
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        padding: 82px 0px;
+        gap: 42px;
+        position: relative;
+
+
+        &-card{
+            width: 250px;
+            height: 397px;
+            flex-shrink: 0;
+            border-radius: 25px;
+            border: 1px solid #000;
+            background: rgba(255, 255, 255, 0.20);
+            box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.20);
+            // filter: blur(2px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px;
+            cursor: pointer;
+
+            .card-titil{
+                color: #FFC700;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .card-taim{
+                color: #FFF;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                position: absolute;
+                bottom: 50px;
+            }
+        }
+    }
+}

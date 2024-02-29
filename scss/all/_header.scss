@@ -5,30 +5,32 @@ header {
 
     .nav {
         display: flex;
-        height: 70px;
+        padding: 50px 0px 30px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        position: relative;
 
-        &__logo {
-            font-style: 24px;
-            cursor: pointer;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 1258px;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.50); 
         }
 
-        &__list {
-            display: flex;
-            gap: 50px;
-            list-style-type: none;
 
-            &--item {
-                text-transform: uppercase;
-
-                &-link {
-                    text-decoration: none;
-                    &:hover{
-                        color:red;
-                    }
-                }
-            }
-        }
-    }
+       &-toglmy{
+         display: none;
+       }
+       &-titil{
+        color: #FFF;
+        font-family: Jost;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+       }
+        
+    }  
 }
