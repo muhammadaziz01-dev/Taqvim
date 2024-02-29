@@ -1,0 +1,10 @@
+// mixins for
+
+@mixin mixinName($bg, $color){
+  background: $bg;
+  color:$color;
+}
+
+
+// @include mixinName(red, white) // call to mixin
+
