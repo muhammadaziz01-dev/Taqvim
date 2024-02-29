@@ -35,7 +35,54 @@ header {
     }  
 }
 
+@media screen and  (max-width: 577px){
+   
+header {
+    width: 100%; 
+    background: #0B422D;
+    .nav {
+        display: flex;
+        padding: 10px 0px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+       
+       
 
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 0px;
+            height: 0px;
+        }
+
+
+       &-toglmy{
+         display: block;
+         position: absolute;
+         left: 17px;
+
+         button{
+            border: none;
+            border-radius: none;
+            background: transparent;
+         }
+       }
+
+       &-titil{
+          h1{
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+       }
+        
+    } 
+
+}
+}
 
 @media screen and  (max-width: 376px){
 
