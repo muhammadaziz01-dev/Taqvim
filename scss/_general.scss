@@ -30,10 +30,7 @@ body{
         width: 100%;
         height: 100%;
          background-image: url(../assets/imgs/bg-img-mobil.jpg);
-         background-repeat: no-repeat;
-        //  background-position:top;
-        //  object-fit: cover;
-        //  object-fit: inherit;
+         background-repeat: repeat-x;
     } 
   }
   @media screen and  (max-width: 376px){
@@ -42,8 +39,5 @@ body{
         height: 100%;
          background-image: url(../assets/imgs/bg-img-mobil.jpg);
          background-repeat: no-repeat;
-        //  background-position:top;
-        //  object-fit: cover;
-        //  object-fit: inherit;
     } 
   }

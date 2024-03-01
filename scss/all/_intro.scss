@@ -218,8 +218,8 @@
         .intro--top--drap{
             position: absolute;
             top: -20px;
-            left: 10px;
-            width: 355px;
+            left: 20px;
+            width: 375px;
             flex-shrink: 0;
             border-radius: 10px;
             background: #00462B;
@@ -265,7 +265,7 @@
 
         .intro-centr2{
             display: block;
-            width: 355px;
+            width: 395px;
             height: 123px;
             flex-shrink: 0;
             border-radius: 10px;
@@ -327,12 +327,12 @@
             display: grid;
             grid-template-columns: repeat(2, auto);
             padding: 20px 0px;
-            gap: 19px;
+            gap: 29px;
             position: relative;
     
     
             &-card{
-                width: 168px;
+                width: 178px;
                 height: 210px;
                 flex-shrink: 0;
                 border-radius: 25px;

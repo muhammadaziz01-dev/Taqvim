@@ -1,10 +1,7 @@
 "use stric"
 
 const drapBtn = document.querySelector('#drapdount-btn');
-
 const drapBtn2 = document.querySelector('#drapdount-btn2');
-
-
 const drapdunt =document.querySelector('#drapdount');
 const taim = document.querySelector('#taim');
 const sana =document.querySelector('#sana');
@@ -105,7 +102,6 @@ function getTime (){
     sana2.textContent=`${kun} - ${oylar[oy -1]}`;
     taim.textContent=`${soat} : ${minut} : ${soniya}`
 
-    //return `${soat} : ${minut}:${soniya} , ${kun}.${oy}.${yil}`
 
 }
 setInterval(()=>{
@@ -134,13 +130,13 @@ drapdunt.addEventListener("click" , (e)=>{
 //------------get taim--------
 async function getTaim(region) {
     let respomns = await fetch(URL+`?region=${region}`)
+    // console.log(respomns);
     let reusalt = await respomns.json()
-    console.log(reusalt);
+    let timesRegion= await reusalt.times;    
+    
     haftaKuni.textContent = reusalt.weekday;
     hijriSana.textContent = `${reusalt.hijri_date.day} ${reusalt.hijri_date.month} , 1444`
     
-    let timesRegion= await reusalt.times;    
-
     tong.textContent = timesRegion.tong_saharlik;
     quyosh.textContent = timesRegion.quyosh;
     peshin.textContent = timesRegion.peshin;

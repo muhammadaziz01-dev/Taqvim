@@ -327,7 +327,7 @@ body {
     width: 100%;
     height: 100%;
     background-image: url(../assets/imgs/bg-img-mobil.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
   }
 }
 @media screen and (max-width: 376px) {
@@ -634,8 +634,8 @@ footer {
   #intro .intro--top--drap {
     position: absolute;
     top: -20px;
-    left: 10px;
-    width: 355px;
+    left: 20px;
+    width: 375px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #00462B;
@@ -674,7 +674,7 @@ footer {
   }
   #intro .intro-centr2 {
     display: block;
-    width: 355px;
+    width: 395px;
     height: 123px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -730,11 +730,11 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     padding: 20px 0px;
-    gap: 19px;
+    gap: 29px;
     position: relative;
   }
   #intro .intro-botton-card {
-    width: 168px;
+    width: 178px;
     height: 210px;
     flex-shrink: 0;
     border-radius: 25px;
